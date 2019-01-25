@@ -1,0 +1,19 @@
+@media (min-width: 560px) { 
+    #nav-bar {
+        position: fixed;
+        margin: 0 auto; 
+    }
+}
+
+#header {
+    padding-top: 20px;
+    text-align: center; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: middle;
+}
+  
