@@ -6,13 +6,14 @@ const browserSync = require('browser-sync')
 const del = require('del')
 
 var config = {
-  cssin:    __dirname + '/src/css/**/*.css',
-  jsin:     __dirname + '/src/babel/**/*.js',
-  htmlin:   __dirname + '/src/html/**/*.html',
-  assetsin: __dirname + '/src/assets/**/*',
-  cssout:   __dirname + '/docs/css/',
-  jsout:    __dirname + '/docs/js/',
-  htmlout:  __dirname + '/docs/'
+  cssin:     __dirname + '/src/css/**/*.css',
+  jsin:      __dirname + '/src/babel/**/*.js',
+  htmlin:    __dirname + '/src/html/**/*.html',
+  assetsin:  __dirname + '/src/assets/**/*',
+  cssout:    __dirname + '/docs/css/',
+  jsout:     __dirname + '/docs/js/',
+  assetsout: __dirname + '/docs/assets/',
+  htmlout:   __dirname + '/docs/'
 }
 
 function clean () {
@@ -33,7 +34,7 @@ function html () {
 function assets () {
   return gulp
     .src(config.assetsin)
-    .pipe(gulp.dest(config.htmlout))
+    .pipe(gulp.dest(config.assetsout))
 }
 
 function css () {
