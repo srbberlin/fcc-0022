@@ -6,39 +6,39 @@
         </title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/index.js"></script>
     </head>
     <body>
-        <header id="header">
+        <header id="header" class='sects'>
             <nav id="nav-bar">
-                <a href="#A" class="nav-link">Go to A</a>
-                <a href="#B" class="nav-link">Go to B</a>
-                <a href="#C" class="nav-link">Go to C</a>
+                <a href="#header" class="nav-link">Intro</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#view" class="nav-link">View</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
-            <img id="header-img" src="img/unknown-1751208__340.png"><br>
-            header text
+            <p>Lorem ipsum dolor sit amet ...</p><br>
+            <img id="header-img" src="assets/unknown-1751208__340.png"><br>
+            <p>sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p><br>
         </header>
         <main class="flex-container">
-            <section id="A">
-                Section A !
+            <section id="about" class='sects'>
+                <p>Look:<br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><br>
+                <br>
             </section>
-            <section id="B">
-                Section B !
-                <!--src="https://www.youtube.com/embed/xWD3Zi23rIs"-->
-                <iframe id="video" width="480" height="320"
-                    src="https://www.youtube.com/embed/vmSlQFrcUHo"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <!--
-                <video id="video" controls>
-                    <source src="assets/PexelsVideos5051.mp4" type="video/mp4" width="400px" controls>
-                </video>
-                -->
+            <section id="view" class='sects'>
+                <p>Lorem ipsum dolor sit amet, consetetur.</p><br>
+                <video id="video" type="video/mp4" width="600px" controls>
+                    <source src="assets/PexelsVideos946595.mp4">
+                </video><br>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><br>
             </section>
-            <section id="C">
-                Section C !
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input id="email" name="email" type="email" placeholder="insert a valid emailaddress">
-                    <input id="submit" type="submit">
+            <section id="contact" class='sects'>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                    <p>
+                        Contact us, there's more to come !<br><br>
+                        <input id="email" name="email" type="email" placeholder="insert a valid emailaddress">
+                        <input id="submit" type="submit">
+                    </p>
                 </form>
             </section>
         </main>
