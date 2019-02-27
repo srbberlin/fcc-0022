@@ -1,6 +1,4 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
-const sourcemaps = require('gulp-sourcemaps')
 const babel = require('gulp-babel')
 const browserSync = require('browser-sync')
 const del = require('del')
@@ -12,8 +10,8 @@ var config = {
   assetsin:  __dirname + '/src/assets/**/*',
   cssout:    __dirname + '/docs/css/',
   jsout:     __dirname + '/docs/js/',
+  htmlout:   __dirname + '/docs/',
   assetsout: __dirname + '/docs/assets/',
-  htmlout:   __dirname + '/docs/'
 }
 
 function clean () {
